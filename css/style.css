@@ -245,4 +245,47 @@ body {
   background: linear-gradient(90deg, skyblue, blue);
   color: #fff;
 }
+.movelefts {
+  animation-name: movefromleft;
+  animation-duration: 2s;
+}
+.moverights {
+  animation-name: movefromright;
+  animation-duration: 2s;
+}
+.movebottoms {
+  animation-name: movefrombottom;
+  animation-duration: 2s;
+}
+
+@keyframes movefromleft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  left {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movefromright {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  left {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes movefrombottom {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  left {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 /* End Pricing Section */

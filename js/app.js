@@ -32,6 +32,22 @@ $(document).ready(function () {
     auto: true
   }).play();
   // End Premies Section
+
+  // Start pricing section
+  $(window).scroll(function () {
+    let getscroll = $(this).scrollTop();
+    if (getscroll >= 2450) {
+      $(".cardones").addClass("movelefts");
+      $(".cardtwos").addClass("movebottoms");
+      $(".cardthrees").addClass("moverights");
+    } else {
+      $(".cardones").removeClass("movelefts");
+      $(".cardtwos").removeClass("movebottoms");
+      $(".cardthrees").removeClass("moverights");
+    }
+  })
+  //End pricing section
 });
 
 // 28FR
+// 4PS
