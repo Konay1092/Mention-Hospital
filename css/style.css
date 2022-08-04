@@ -245,15 +245,15 @@ body {
   background: linear-gradient(90deg, skyblue, blue);
   color: #fff;
 }
-.movelefts {
+.move-lefts {
   animation-name: movefromleft;
   animation-duration: 2s;
 }
-.moverights {
+.move-rights {
   animation-name: movefromright;
   animation-duration: 2s;
 }
-.movebottoms {
+.move-bottoms {
   animation-name: movefrombottom;
   animation-duration: 2s;
 }

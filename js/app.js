@@ -37,13 +37,13 @@ $(document).ready(function () {
   $(window).scroll(function () {
     let getscroll = $(this).scrollTop();
     if (getscroll >= 2450) {
-      $(".cardones").addClass("movelefts");
-      $(".cardtwos").addClass("movebottoms");
-      $(".cardthrees").addClass("moverights");
+      $(".cardones").addClass("move-lefts");
+      $(".cardtwos").addClass("move-bottoms");
+      $(".cardthrees").addClass("move-rights");
     } else {
-      $(".cardones").removeClass("movelefts");
-      $(".cardtwos").removeClass("movebottoms");
-      $(".cardthrees").removeClass("moverights");
+      $(".cardones").removeClass("move-lefts");
+      $(".cardtwos").removeClass("move-bottoms");
+      $(".cardthrees").removeClass("move-rights");
     }
   })
   //End pricing section
