@@ -28,6 +28,11 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Start progress bar  -->
+    <div id="progresses">
+      <span id="progressvalues"></span>
+    </div>
+    <!-- End progress bar  -->
     <!-- Start Header Section -->
     <header>
       <!-- Start Header Intro Section  -->
@@ -78,11 +83,11 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#feature" class="nav-link active">Feature</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">Department</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">Our Team</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">Premises</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">FAQ</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link active">Pricing</a></li>
+                    <li class="nav-item"><a href="#dep" class="nav-link active">Department</a></li>
+                    <li class="nav-item"><a href="#adv" class="nav-link active">Our Team</a></li>
+                    <li class="nav-item"><a href="#premises" class="nav-link active">Premises</a></li>
+                    <li class="nav-item"><a href="#faqs" class="nav-link active">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -227,7 +232,7 @@
            </div>
 
            <div class="col-md-6 text-center mt-3">
-              <a href="#">
+              <a href="#" id="videos" data-bs-target="#videomodal" data-bs-toggle="modal" data-video="https://www.youtube.com/embed/2kyPgu03pgE">
                 <i class="fas fa-play fa-3x"></i>
               </a>
               <h1>See What We Do</h1>
@@ -401,7 +406,7 @@
 
     <!-- Start premires section -->
 
-    <section>
+    <section id="premises">
 
       <div class="container">
  <!-- Start title --> 
@@ -410,7 +415,7 @@
                       <h4>Our Department</h4>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eum quasi. 
                       </p>
-                    </div>
+                    </div>    
                 </div>
           <!-- End title -->
 
@@ -535,6 +540,146 @@
       </div>
     </section>
     <!-- End Priciing Section -->
+    <!-- Start join us Section -->
+
+    <section id="faqs">
+           <div class="container">
+                 <!-- Start title -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h4>Our Pricing</h4>
+            <span>Our best Price Offer</span>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <!-- End title -->
+        <div class="row">
+          <div class="col-md-4 col-sm12 mb-3 customforms">
+            <h4>Instructor Form</h4>
+            <form action="" method="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+                                <input type="text" name="name" id="email" class="form-control" placeholder="Your Email" />
+                                <input type="text" name="name" id="phone" class="form-control" placeholder="Your Phone" />
+                                <textarea name="bio" id="bio" class="form-control" placeholder="Your Bio"></textarea>
+                                <div class="d-grid mt-3">
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-0">Join us today</button>
+                                </div>
+                            </div>
+                        </div>
+            </form>
+
+            
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div id="accordion">
+              <h3>Why should i join your team?</h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nobis delectus quos reprehenderit enim . </p>
+              </div>
+              <h4>What would you gain on your team?</h4>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nobis delectus quos reprehenderit enim . </p>
+              </div>
+              <h4>Can I get paid?</h4>
+              <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nobis delectus quos reprehenderit enim . </p>
+              </div>
+              <h4>HOw many days I need work?</h4>
+              <div> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nobis delectus quos reprehenderit enim . </p>
+              </div>
+            </div>
+
+            </div>
+          
+        </div>
+                  
+           
+    </section>
+
+
+    <!-- End join us Section -->
+
+    <!-- Start Footer Section -->
+          <footer class="bg-dark px-5">
+            <div class="container-fluid">
+              <div class="row text-light py-4">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <h5 class="mb-3"><img src="/assets/img/fav/favicon2.png" width="70px" alt="fav2">Mention hospital</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                          <i class="fas fa-phone"></i>+95 9962297286
+                        </li>
+                        <li>
+                          <i class="fas fa-envelope"></i>amin@mentionhospital.com
+                        </li>
+                        <li>
+                          <i class="fas fa-map-marker-alt">60st,Mandalay,Myanmar</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                   <h5 class="mb-3">Visit Us</h5>
+                   <div class="socialicons">
+                    <a href="#" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                   </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <h5 class="mb-3">Support</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-uppercase footerlinks">Documentations</a></li>
+                    <li><a href="#" class="text-uppercase footerlinks">FAQS</a></li>
+                    <li><a href="#" class="text-uppercase footerlinks">Conditions</a></li>
+                    <li><a href="#" class="text-uppercase footerlinks">Get Codes</a></li>
+                  </ul>
+                  
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <h5 class="mb-3">Donwload Apps:</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="nav-link footerlinks">Google Play Stroe</a></li>
+                    <li><a href="#" class="nav-link footerlinks">Apple Store</a></li>
+                    <li><a href="#" class="nav-link footerlinks">Direct link</a></li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+              <div class="text-light d-flex justify-content-center border-top pt-4">
+                <p>&copy;<span id="getyear"></span>Copyright,inc.All rights reserved</p>
+              </div>
+            </div>
+              
+          </footer>
+    <!-- End Footer Section -->
+    <!-- Start Modal Area -->
+       <!-- start Video Modal -->
+
+       <div id="videomodal" class="modal fade">
+          <div class="modal-dialog">
+             <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  <iframe   width="100%" height="350" allowfullscreen></iframe>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!-- End Video Modal -->
+    <!-- End Modal Area -->
 
     <!-- boostrap css1 js1 -->
     <script
@@ -563,3 +708,7 @@
   </body>
 </html>
 <!-- 29DP -->
+<!-- 5DONE -->
+<html>
+  dfld
+</htmlidpdfdk;df;d>

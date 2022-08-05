@@ -289,3 +289,62 @@ body {
   }
 }
 /* End Pricing Section */
+
+/* Start join us section */
+.customforms {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+}
+/* End Join us section */
+/* Start Footer  */
+.socialicons a {
+  color: #fff;
+  border: 1px solid #f4f4f4;
+  padding: 5px;
+  margin: 0 5px;
+}
+.socialicons a:hover {
+  background-color: blue;
+}
+.footerlinks {
+  color: #eee;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.footerlinks:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
+  letter-spacing: 1px;
+}
+/* ENd Footer  */
+/* Start progress */
+#progresses {
+  width: 50px;
+  height: 50px;
+  background-color: steelblue;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
+#progressvalues {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
+}
+/* End progress */

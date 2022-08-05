@@ -20,6 +20,23 @@ $(document).ready(function () {
     }
   });
   //   End info section
+  //Start ADV SEction
+
+  $("#videos").click(function () {
+    var getmodal = $(this).data("bs-target");
+    var getvideosrc = $(this).data("video");
+    var videourlwithauto = getvideosrc + "?autoplay=1";
+
+    $(getmodal + "iframe").attr("src" + videourlwithauto);
+
+    $(getmodal + "button.btn-close").click(function () {
+      $(getmodal + "iframe").attr("src", getvideosrc);
+    });
+    $(getmodal).click("hidden.bs.modal", function () {
+      $(getmodal + "iframe").attr("src", getvideosrc);
+    });
+  })
+  //End ADV SEction
 
   //Start Premies Section
   $("#lightslider").lightSlider({
@@ -47,6 +64,58 @@ $(document).ready(function () {
     }
   })
   //End pricing section
+
+  //Start join us section
+
+  $("#accordion").accordion();
+  //END join us section
+  // Start footer section
+  $("#getyear").text(new Date().getUTCFullYear());
+  // End footer section
+  // start progress
+  $(window).scroll(function () {
+    var getprogress = $("#progresses");
+    var getprogressvalue = $("#progressvalues");
+    var getscrolltop = $(this).scrollTop();
+    console.log(getscrolltop);
+
+    //By JQUERY
+
+    // var getscrollheight = $(document).height();
+    // console.log(getscrollheight);
+
+    // var getclientheight = $(window).height();
+    // console.log(getclientheight);
+
+    // var calheight = getscrollheight - getclientheight;
+    // var getfinalheight = Math.round(getscrolltop * 100 / calheight);
+
+    //console.log(getfinalheight);
+
+    // formula
+    //st*100/(projectheight-currentviewhright)
+
+
+    //By Javascrpt
+    var getscrollheight = document.documentElement.scrollHeight;
+    console.log(getscrollheight);
+    var getclientheight = document.documentElement.clientHeight;
+    console.log(getclientheight);
+    var calheight = getscrollheight - getclientheight;
+    var getfinalheight = Math.round(getscrolltop * 100 / calheight);
+
+
+
+
+    getprogressvalue.text(`${getfinalheight}%`);
+
+    getprogress.css({
+      "background": `conic-gradient(steelblue ${getfinalheight}%,#eee ${getfinalheight}%)`
+    })
+
+
+  })
+  //end progress
 });
 
 // 28FR
